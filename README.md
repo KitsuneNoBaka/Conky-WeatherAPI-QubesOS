@@ -1,15 +1,15 @@
 <p>
     <div align="center">
-        <span style="color:aqua;"><h1>Conky-WeatherApi-QubesOS</h1></span>
+        <h1>Conky-WeatherApi-QubesOS</h1>
     </div>
 </p>
 
 <p>
     <div align="justify">
-        <span style="font-weight:bold;">Conky LUA-Cairo WeatherApi config for QubesOS / dom0</span>
+        <h3>Conky LUA-Cairo WeatherApi config for QubesOS / dom0</h3>
     </div>
     <div align="justify">
-        <span style="color:white;">v0.6.9:</san>
+        v0.6.9:
         <blockquote style="color:grey;">Text only widgets as I'm searching for usable SVG icon pack. Alternativelly I will convert orginal, small WeatherApi icons to SVG - but that's alot of work.</br>
         When I acquire suitable icon pack then I i will rewrite whole code to use images and less parameters to declutter widgets.</blockquote>
     </div>
@@ -19,8 +19,8 @@
     <div align="center">
         <table>
             <tr align="center">
-                <td><span style="color:aqua;">Berlin - metric units</span></td>
-                <td><span style="color:aqua;">Aspen - imperial units</span></td>
+                <td>Berlin - metric units</td>
+                <td>Aspen - imperial units</td>
             </tr>
             <tr align="center">
                 <td><img src="res/conky-weatherapi-berlin.png" alt="WeatherApi - Berlin"/></td>
@@ -35,7 +35,7 @@
 <p>
     <h2></h2>
     <div align="center">
-        <span style="color:red;"><h2>Prerequsites</h2></span>
+        <h2>Prerequsites</h2>
     </div>
 </p>
 
@@ -48,7 +48,7 @@
 <p>
     <h2></h2>
     <div align="center">
-        <span style="color:red;"><h2>1.</h2></span>
+        <h2>1.</h2>
     </div>
 </p>
 
@@ -82,7 +82,7 @@ Next you need make finishing touches in `dvm-minimal` settings:
 <p>
     <h2></h2>
     <div align="center">
-        <span style="color:red;"><h2>2.</h2></span>
+        <h2>2.</h2>
     </div>
 </p>
 
@@ -94,7 +94,7 @@ sudo dnf install conky lua cairo
 <p>
     <h2></h2>
     <div align="center">
-        <span style="color:red;"><h2>3.</h2></span>
+        <h2>3.</h2>
     </div>
 </p>
 
@@ -112,7 +112,7 @@ chmod +X ./Conky-WeatherAPI-QubesOS/weatherapi-conky-start.sh
 <p>
     <h2></h2>
     <div align="center">
-        <span style="color:red;"><h2>4.</h2></span>
+        <h2>4.</h2>
     </div>
 </p>
 
@@ -122,7 +122,7 @@ After that login to dashboard and copy API key to clipboard - you will need it f
 <p>
     <h2></h2>
     <div align="center">
-        <span style="color:red;"><h2>5.</h2></span>
+        <h2>5.</h2>
     </div>
 </p>
 
