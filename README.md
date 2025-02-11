@@ -104,8 +104,8 @@ Pull it from appvm in which you downloaded it to `dom0`  and unpack it there ( i
 ```
 mkdir ~/conky
 cd conky
-qvm-run --pass-io your-appvm-with-files "cat /home/user/Downloads/conky-weatherapi-qubesos-0.9.6.tar.gz" ./conky-weatherapi-qubesos-0.9.6.tar.gz
-tar -xzvf ./conky-weatherapi-qubesos-0.9.6.tar.gz
+qvm-run --pass-io your-appvm-with-files "cat /home/user/Downloads/conky-weatherapi-qubesos-v0.9.6.tar.gz" ./conky-weatherapi-qubesos-v0.9.6.tar.gz
+tar -xzvf ./conky-weatherapi-qubesos-v0.9.6.tar.gz
 chmod +X ./Conky-WeatherAPI-QubesOS/weatherapi-conky-start.sh
 ```
 
