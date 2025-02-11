@@ -1,5 +1,9 @@
 {
     "Lua.diagnostics.disable": [
         "undefined-global"
+    ],
+    "Lua.diagnostics.globals": [
+        "conky",
+        "conky_main"
     ]
 }
