@@ -98,7 +98,7 @@ sudo dnf install conky lua cairo
     </div>
 </p>
 
-Download copy of this repository release either by `git` or from `packages`.
+Download copy of this repository release either by `git` or from GitHub `releases`.
 If you pulled it by `git` in appvm then you need to pack it's directory to `tar.gz` archive.</br>
 Pull it from appvm in which you downloaded it to `dom0`  and unpack it there ( in `dom0` terminal)
 ```
