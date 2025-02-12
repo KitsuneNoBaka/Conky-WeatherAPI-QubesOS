@@ -87,13 +87,15 @@ config.set = {
 	-- chose minimal disposable qube with net capability
 	dispVM = 'dvm-minimal',
 	-- url with api from https://weatherapi.com
-	weatherAPIkey = '########',	-- it's your personal API key
-	weatherAPIcity = 'City_Name',	-- it's your place for which you want forecast
-	weatherAPIdays = '2',			-- it's number of days forecast is for
-	weatherAPIaqi = 'yes',		-- air quality index
-	weatherAPIalerts = 'no',		-- textual alerts
-	weatherAPIlang = 'en',		-- language of conditions text (optional - if not set it will be english)
-	weatherAPIurl = '"https://api.weatherapi.com/v1/forecast.json?key=########&q=City_Name&days=2&aqi=yes&alerts=no&lang=en"',
+	weatherAPIurl = {
+		prefix = '"https://api.weatherapi.com/v1/forecast.json?',
+		key = '########',	-- it's your personal API key
+		city = 'City_Name',	-- it's your place for which you want forecast
+		days = '2',			-- it's number of days forecast is for
+		aqi = 'yes',		-- air quality index
+		alerts = 'no',		-- textual alerts
+		lang = 'en',		-- language of conditions text (optional - if not set it will be english)
+	},
 
 	fonts = {
 		default = 'Liberation Mono',

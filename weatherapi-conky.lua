@@ -10,7 +10,16 @@ config.set.queryM = config.set.queryM*60
 local weatherArray = {}
 
 local function main_body()
-	local weatherCMD = 'qvm-run --pass-io --quiet --dispvm '..config.set.dispVM..' curl -s '..config.set.weatherAPIurl
+	local wURL = config.set.weatherAPIurl.prefix..
+		'key='..config.set.weatherAPIkey.key..
+		'&q='..config.set.weatherAPIcity.city..
+		'&days='..config.set.weatherAPIdays.days..
+		'&aqi='..config.set.weatherAPIaqi.aqi..
+		'&alerts='..config.set.weatherAPIalerts.alerts..
+		'&lang='..config.set.weatherAPIlang.lang..
+		'"'
+
+	local weatherCMD = 'qvm-run --pass-io --quiet --dispvm '..config.set.dispVM..' curl -s '..wURL
 
 	if lualib.mtime() > config.set.timeLoop then
 		config.set.timeLoop = lualib.mtime() + config.set.queryM
