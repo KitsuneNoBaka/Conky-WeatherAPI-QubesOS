@@ -104,8 +104,8 @@ Pull it from appvm in which you downloaded it to `dom0`  and unpack it there ( i
 ```
 mkdir ~/conky
 cd conky
-qvm-run --pass-io your-appvm-with-files "cat /home/user/Downloads/conky-weatherapi-qubesos-v0.9.6.tar.gz" ./conky-weatherapi-qubesos-v0.9.6.tar.gz
-tar -xzvf ./conky-weatherapi-qubesos-v0.9.6.tar.gz
+qvm-run --pass-io your-appvm-with-files "cat /home/user/Downloads/conky-weatherapi-qubesos-v1.0.0.tar.gz" ./conky-weatherapi-qubesos-v1.0.0.tar.gz
+tar -xzvf ./conky-weatherapi-qubesos-v1.0.0.tar.gz
 chmod +X ./Conky-WeatherAPI-QubesOS/weatherapi-conky-start.sh
 ```
 
@@ -126,7 +126,7 @@ After that login to dashboard and copy API key to clipboard - you will need it f
     </div>
 </p>
 
-Go to `~/conky/Conky-WeatherAPI-QubeOS` directory and edit `weatherapi-conky-config.lua`.</br>
+Go to `~/conky/Conky-WeatherAPI-QubeOS` directory and edit `config.lua`.</br>
 Over there you might change possition of Conky window, you can chose units `metric` or `imperial`, change name of disposable qube, `queryM` variable to how often to pull data from WeatherApi site (`WeatherApi` is updating it's data in API every 15 minutes so going below default amount is useless).</br>
 But most importantly, in `weatherAPIurl` variable you need to paste your `WeaterApi key` and your town/city that you weather data want.
 
@@ -135,7 +135,7 @@ This config file have comments on every thing you can change so read it carefull
 Thats it.</br>
 Now you can test if everythings ok by running startup script in terminal:
 ```
-./weatherapi-conky-start.sh --nolog
+./startup.sh --no-sleep --no-log
 ```
 
 If everything is ok and there is no errors in terminal and widgets apears with proper data you can go to `Conky-WeatherAPI-QubeOS/res/home` directory. Inside of it there are directory tree with `conky-icon.png` icon and `weatherapi-conky.desktop` file - copy them to the same directories to your `dom0` `home` directory (you can use `Thunar File Manager` for that).

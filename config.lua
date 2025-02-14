@@ -1,6 +1,6 @@
 --[[
 ------------------------------------------------------------------------
--- configuration file                                                 --
+-- configuration file 
 ------------------------------------------------------------------------
 
 Here are config parameters required for widget to works
@@ -9,8 +9,8 @@ and decide if you want metric or imperial units
 ]]
 
 ------------------------------------------------------------------------
--- width and height of whole Conky drawing space                      --
-local width, height = 360, 524                                        --
+-- width and height of whole Conky drawing space
+local width, height = 360, 524 
 ------------------------------------------------------------------------
 
 --[[
@@ -65,7 +65,7 @@ conky.config = {
 	gap_x = -44,				-- gap between border of the screen and border of the Conky window in X axis (screen widht) dependent on alignment
 	gap_y = 38,					-- gap between border of the screen and border of the Conky window in Y axis (screen height) dependent on alignment
 
-    lua_load = 'weatherapi-conky.lua',
+    lua_load = 'conky.lua',
 	lua_draw_hook_pre = 'conky_main',
 }
 
@@ -87,13 +87,15 @@ config.set = {
 	-- chose minimal disposable qube with net capability
 	dispVM = 'dvm-minimal',
 	-- url with api from https://weatherapi.com
-	-- key=########	- it's your personal API key
-	-- q=City_Name 	- it's your place for which you want forecast
-	-- days=2 		- it's number of days forecast is for
-	-- aqi=yes		- air quality index
-	-- alerts=no	- textual alerts
-	-- lang=fr		- language of conditions text (optional - if not set it will be english)
-	weatherAPIurl = '"https://api.weatherapi.com/v1/forecast.json?key=########&q=City_Name&days=2&aqi=yes&alerts=no&lang=en"',
+	weatherAPIurl = {
+		prefix = '"https://api.weatherapi.com/v1/forecast.json?',
+		key = '########',	-- it's your personal API key
+		city = 'YOUR_CITY',	-- it's your place for which you want forecast
+		days = '2',			-- it's number of days forecast is for
+		aqi = 'yes',		-- air quality index
+		alerts = 'no',		-- textual alerts
+		lang = 'en',		-- language of conditions text (optional - if not set it will be english)
+	},
 
 	fonts = {
 		default = 'Liberation Mono',
@@ -111,6 +113,9 @@ config.set = {
 		gaugeCrit = 0xdd2c00,
 		black = 0x000000,
 		white = 0xffffff,
+		red = 0xff0000,
+		green = 0x00ff00,
+		blue = 0x0000ff,
 		pastelred = 0xffb060,
 		pastelgreen = 0x60ffb0,
 		pastelblue = 0x60b0ff,

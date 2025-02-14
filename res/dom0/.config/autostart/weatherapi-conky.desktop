@@ -6,4 +6,4 @@ Icon=/home/yOURuSERnAME/.local/share/icons/conky-icon.png
 Name=WeatherAPI Conky
 Comment=WeatherAPI Conky starter, change "yOURuSERnAME" to your username at dom0
 Path=/home/yOURuSERnAME/conky/Conky-WeatherAPI-QubesOS/
-Exec=/home/yOURuSERnAME/conky/Conky-WeatherAPI-QubesOS/weatherapi-conky-start.sh
+Exec=/home/yOURuSERnAME/conky/Conky-WeatherAPI-QubesOS/startup.sh
